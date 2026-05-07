@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  cli-proxy-api:
+    build: .
+    container_name: cli-proxy-api
+    ports:
+      - "80:80"
+    volumes:
+      - cli-proxy-data:/root/.cli-proxy-api
+    restart: always
+
+volumes:
+  cli-proxy-data:

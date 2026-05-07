@@ -1,0 +1,6 @@
+*.exe
+*.tar.gz
+*.zip
+logs/
+.DS_Store
+implementation_plan.md
