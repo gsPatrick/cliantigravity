@@ -22,11 +22,11 @@ RUN curl -L https://github.com/router-for-me/CLIProxyAPI/releases/download/v6.7.
 COPY config.yaml .
 COPY static/ ./static/
 
-# Ensure the auth directory exists for persistence
-RUN mkdir -p /root/.cli-proxy-api
+# Ensure the data directory exists for persistence
+RUN mkdir -p /app/data
 
 # Expose the API port
-EXPOSE 80
+EXPOSE 8317
 
 # Start the application
 CMD ["./cli-proxy-api"]

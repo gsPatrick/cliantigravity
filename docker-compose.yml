@@ -4,9 +4,9 @@ services:
     build: .
     container_name: cli-proxy-api
     ports:
-      - "80:80"
+      - "80:8317"
     volumes:
-      - cli-proxy-data:/root/.cli-proxy-api
+      - cli-proxy-data:/app/data
     restart: always
 
 volumes:
